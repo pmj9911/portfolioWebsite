@@ -1,0 +1,56 @@
+{
+  "backgroundType": "gradient",
+  "plainBackgroundMode": "daylight",
+  "gradientColors": "#EE7752, #7723AB, #442200, #001122",
+  "FirstName": "Parth",
+  "MiddleName": "",
+  "LastName": "Jardosh",
+  "devDesc": "",
+  "icons": [
+    {
+      "id": 0,
+      "image": "fa-twitter",
+      "url": "https://www.twitter.com/parthjardosh/",
+      "style": "socialicons"
+    },
+    {
+      "id": 1,
+      "image": "fa-github",
+      "url": "https://github.com/pmj9911",
+      "style": "socialicons"
+    },
+    {
+      "id": 2,
+      "image": "fa-linkedin",
+      "url": "https://www.linkedin.com/parth-jardosh",
+      "style": "socialicons"
+    },
+    {
+      "id": 3,
+      "image": "fa-hackerrank",
+      "url": "https://www.hackerrank.com/parthjardosh",
+      "style": "socialicons"
+    },
+    {
+      "id": 4,
+      "image": "fa-google",
+      "url": "mailto:parthjardosh@gmail.com",
+      "style": "socialicons"
+    }
+  ],
+  "aboutHeading": "About Me",
+  "showInstaProfilePic": false,
+  "instaLink": "https://www.instagram.com/",
+  "instaUsername": "parthj9911",
+  "instaQuerry": "/?__a=1",
+  "aboutDescription": "Final year Computer Science undergraduate pursuing Bachelor of Computer Science at Sardar Patel Institute of Technology, Mumbai . Interested in developing Python/Deep Learning projects and Web development  using Python/Django.Further, I'm keen towards the Data Science field.",
+  "projectHeading": "Recent Projects",
+  "gitHubLink": "https://api.github.com/users/",
+  "gitHubUsername": "pmj9911",
+  "gitHubQuerry": "/repos?sort=updated&direction=desc",
+  "projectsLength": 22,
+  "showNavigationbar": true,
+  "showBlog": false,
+  "showHackathon": true,
+  "showProject": true
+}

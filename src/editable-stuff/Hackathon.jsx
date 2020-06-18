@@ -1,0 +1,73 @@
+import { HackathonBuilder } from "../components/Hackathon/HackathonBuilder";
+import vesimImage from "./HackathonImages/VESIM.jpeg";
+import nmimsImage from "./HackathonImages/NMIMS.jpeg";
+import hbtbImage from "./HackathonImages/HackByTheBeach.jpeg";
+import vitImage from "./HackathonImages/VIT-HACK.jpeg";
+
+const Hackathonlist = [];
+
+const vitHack = new HackathonBuilder({
+  title: "VIT- Hackathon ",
+  image: vitImage,
+  languages: ["Python", "Angular", "Flask", "Deep Learning"],
+  description:
+    "VIT HACKATHON",
+})
+  .addHeading("VIT")
+  .addParagraph(
+    "Date: 21st- 22nd September, 2019"
+  )
+  .addParagraph(
+    "Location: Vellore, Tamil Nadu"
+  );
+
+const nmimsHack = new HackathonBuilder({
+  title: "Hack-N-Code 3.0 ",
+  image: nmimsImage,
+  languages: ["Python", "Django", "Deep Learning"],
+  description:
+    "NMIMS HACKATHON",
+})
+.addHeading("Hack-N-Code 3.0")
+.addParagraph(
+  "Date: 13th October, 2019"
+)
+.addParagraph(
+  "Location: Mumbai,Maharahstra"
+);
+
+const vesimHack = new HackathonBuilder({
+  title: "Data Quezt ",
+  image: vesimImage,
+  languages: ["Python", "Deep Learning"],
+  description:
+    "VESIM",
+})
+.addHeading("DATA-QUEZT")
+.addParagraph(
+  "Date: 4th-6th December, 2019"
+)
+.addParagraph(
+  "Location: Mumbai, Maharashtra"
+);
+
+const HackByTheBeach = new HackathonBuilder({
+  title: "Hack by the beach",
+  image: hbtbImage,
+  languages: ["Python", "Deep Learning"],
+  description:
+    "Hack By the Beach",
+})
+.addHeading("VIT")
+.addParagraph(
+  "Date: 30st January- 1st February, 2019"
+)
+.addParagraph(
+  "Location: Sancoale, Goa"
+);
+Hackathonlist.push(HackByTheBeach);
+Hackathonlist.push(vesimHack);
+Hackathonlist.push(nmimsHack);
+Hackathonlist.push(vitHack);
+
+export default Hackathonlist;
