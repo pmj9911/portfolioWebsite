@@ -17,6 +17,7 @@ const Project = (props) => {
             description={value.description}
             index={index}
             Technology={value.Technology}
+            githubLink={value.githubLink}
           />
         );
       })}
@@ -24,7 +25,8 @@ const Project = (props) => {
   );
 };
 
-const ProjectCard = ({ index, name, updatedOn, description, Technology}) => {
+const ProjectCard = ({ index, name, updatedOn, description, Technology, githubLink}) => {
+
   return (
     <div className="m-5">
       <div className="">
@@ -34,21 +36,25 @@ const ProjectCard = ({ index, name, updatedOn, description, Technology}) => {
               <h2 className="">{name}</h2>
               <h6 >{updatedOn}</h6>
               <div className="pb-3">
-                technology:{" "}
                 {Technology.map((tech) => (
                   <p key={tech} className="badge badge-light card-link text-dark">
-                    {tech}
+                    <i className={`devicon-${tech}`} style={{fontSize:"40px"}} ></i>
+                    {/* <i class="devicon-html5-plain colored"></i> */}
                   </p>
                 ))}
               </div>
-              {/* <Link to={`${process.env.PUBLIC_URL}Project/${index}`}>
+              <Link to={`${process.env.PUBLIC_URL}Project/${index}`}>
                 This is a project{" "}
-              </Link> */}
+              </Link>
             </div>
           </div>
-          <div className="col-2 col-lg-2"></div>
-          <div className="col-1 col-lg-1">
+          <div className="col-2 col-lg-2">
               {/* <i  class="fa fa-arrow-circle-right fa-2x" aria-hidden="true"></i> */}
+          </div>
+          <div className="col-1 col-lg-1">
+              <a href={githubLink} target="_blank"> 
+                <i class="devicon-github-plain colored" style={{fontSize:"50px"}}></i> 
+              </a>
           </div>
         </div>
         <hr />

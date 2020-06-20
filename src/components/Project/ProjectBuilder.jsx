@@ -20,17 +20,33 @@ class ProjectBuilder {
     return this;
   };
 
+  addImage = (props) => {
+    this.list.push(
+      <div style={{height:"300px"}}>
+      <img
+          key={this.list.length}
+          className="circle mb-3"
+          src={props}
+          
+          style={{height: "100%", width: "100%", objectFit: "contain"}}
+          alt={`${props}`}
+        />
+      </div>
+    );
+    return this;
+  };
+
   addHeading = (props) => {
     this.list.push(
       <Fragment key={this.list.length}>
-        <h1 className="">{props}</h1>
+        <h4 className="">{props}</h4>
         <hr />
       </Fragment>
     );
     return this;
   };
 
-  getHackathon = () => {
+  getProject = () => {
     return <div className="container-lg">{this.list}</div>;
   };
 }
