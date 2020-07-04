@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
 
-const ProjectCard = ({ value }) => {
+const ProjectGithubCard = ({ value }) => {
   const [updated_at, setUpdatedAt] = useState("0 mints");
 
   const handleUpdatetime = useCallback(
@@ -43,6 +43,9 @@ const ProjectCard = ({ value }) => {
   }, [handleUpdatetime]);
 
   const { name, description, svn_url, stargazers_count, languages_url } = value;
+  // if (name == "pmj9911.github.io"){
+  //   return(<div></div>);
+  // }
   return (
     <div className="col-md-6">
       <div className="card shadow-lg p-3 mb-5 bg-white rounded">
@@ -125,4 +128,4 @@ const Technology = ({ value }) => {
   );
 };
 
-export default ProjectCard;
+export default ProjectGithubCard;

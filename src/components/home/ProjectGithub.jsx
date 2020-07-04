@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
-import ProjectCard from "./ProjectCard";
+import ProjectGithubCard from "./ProjectGithubCard";
 import {
   projectHeading,
   gitHubLink,
@@ -8,9 +8,10 @@ import {
   gitHubQuerry,
   projectsLength,
 } from "../../editable-stuff/configurations.json";
+import { Project } from "../Project/Project";
 
 
-const Project = () => {
+const ProjectGithub = () => {
   const [projectsArray, setProjectsArray] = useState([]);
 
   const handleRequest = useCallback((e) => {
@@ -40,22 +41,24 @@ const Project = () => {
         <div className="container container-fluid p-5">
           <h1 className="display-4 pb-5">{projectHeading}</h1>
           <div className="row">
-            {projectsArray.map((project) => (
-              <ProjectCard key={project.id} id={project.id} value={project} />
+            {projectsArray.map((ProjectGithub) => (
+              <ProjectGithubCard key={ProjectGithub.id} id={ProjectGithub.id} value={ProjectGithub} />
             ))}
           </div>
         </div>
       )}
       {projectsArray.length == 0 && (
         <div className="container container-fluid p-5">
-          <h1 className="display-4 pb-5">{projectHeading}</h1>
-          <div className="row">
+          {/* <h1 className="display-4 pb-5">{projectHeading}</h1> */}
+          {/* <div className="row">
             Max Limit exceeded
-          </div>
+          </div> */}
+          <Project />
+
         </div>
       )}
     </div>
   );
 };
 
-export default Project;
+export default ProjectGithub;

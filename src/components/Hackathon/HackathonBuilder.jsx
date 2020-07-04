@@ -3,11 +3,14 @@ import React, { useState, Fragment } from "react";
 class HackathonBuilder {
   list = [];
 
-  constructor({ title, image, description, languages }) {
+  constructor({ title, image, location,description, languages, rank, superS }) {
     this.title = title;
     this.image = image;
+    this.location = location;
     this.description = description;
     this.languages = languages;
+    this.rank = rank;
+    this.superS = superS;
   }
 
   addParagraph = (props) => {

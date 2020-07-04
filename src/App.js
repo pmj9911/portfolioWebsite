@@ -11,7 +11,7 @@ import {
 } from "./editable-stuff/configurations.json";
 import MainBody from "./components/home/MainBody";
 import AboutMe from "./components/home/AboutMe";
-// import Project from "./components/home/Project";
+import ProjectGithub from "./components/home/ProjectGithub";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { Blog } from "./components/blog/Blog";
@@ -26,7 +26,7 @@ const Home = () => {
     <Fragment>
       <MainBody />
       <AboutMe />
-      <Project />
+      <ProjectGithub />
     </Fragment>
   );
 };

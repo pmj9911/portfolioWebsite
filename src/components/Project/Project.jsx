@@ -43,9 +43,9 @@ const ProjectCard = ({ index, name, updatedOn, description, Technology, githubLi
                   </p>
                 ))}
               </div>
-              <Link to={`${process.env.PUBLIC_URL}Project/${index}`}>
+              {/* <Link to={`${process.env.PUBLIC_URL}Project/${index}`}>
                 This is a project{" "}
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="col-2 col-lg-2">

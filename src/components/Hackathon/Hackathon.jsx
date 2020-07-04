@@ -14,9 +14,12 @@ const Hackathon = (props) => {
             key={index}
             title={value.title}
             image={value.image}
+            location={value.location}
             description={value.description}
             index={index}
             language_list={value.languages}
+            rank={value.rank}
+            superS={value.superS}
           />
         );
       })}
@@ -24,17 +27,18 @@ const Hackathon = (props) => {
   );
 };
 
-const HackathonCard = ({ index, title, image, description,language_list }) => {
+const HackathonCard = ({ index, title, image, location,description,language_list,rank,superS }) => {
   return (
     <div className="m-5">
       <div className="">
         <div className="row">
-          <div className="col-6 col-lg-6">
+          <div className="col-5 col-lg-5">
             <img src={image} style={imageStyle} className="card-img" alt="..." />
           </div>
           <div className="col-6 col-lg-6">
             <div className="">
               <h1 className="">{title}</h1>
+              <p className="lead">{location}</p>
               <p className="lead">{description}</p>
               <div className="pb-3">
                 Technology:{" "}
@@ -47,7 +51,17 @@ const HackathonCard = ({ index, title, image, description,language_list }) => {
               {/* <Link to={`${process.env.PUBLIC_URL}Hackathon/${index}`}>
                 Click here to read the experience{" "}
               </Link> */}
+              {process.env.PUBLIC_URL}
             </div>
+          </div>
+
+          <div className="col-1 col-lg-1">
+            <span class="fa-stack">
+                <span class="fa fa-circle-o fa-stack-2x"></span>
+                <strong class="fa-stack-3x">
+                    <h2>{rank}<sup>{superS}</sup></h2>
+                </strong>
+            </span>
           </div>
         </div>
         <hr />
