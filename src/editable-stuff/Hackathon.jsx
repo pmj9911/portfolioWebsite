@@ -1,5 +1,5 @@
 import { HackathonBuilder } from "../components/Hackathon/HackathonBuilder";
-import vesimImage from "./HackathonImages/VESIM.jpeg";
+import vesimImage from "./HackathonImages/VESIM.jpg";
 import nmimsImage from "./HackathonImages/NMIMS.jpeg";
 import hbtbImage from "./HackathonImages/HackByTheBeach.jpeg";
 import vitImage from "./HackathonImages/VIT-HACK.jpeg";

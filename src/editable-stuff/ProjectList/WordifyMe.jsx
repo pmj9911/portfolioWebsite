@@ -5,11 +5,12 @@ const WordifyMe = new ProjectBuilder({
     githubLink :   "https://github.com/pmj9911/WordifyMe",
     //https://github.com/pmj9911/WordifyMe ,
     Technology : ["python-plain-wordmark"],
-    updatedOn:  "23 April 2020 ",
+    description: "Made as a part of GRE study, to efficiently remember custom word lists. It is a mobile application, made using Flutter. There is no login system in this app yet. All the data is stored in a central server hosted on pythonanywhere.",
+    projectDuration:  "March 2020 - June 2020 ",
     })
     .addHeading("Description:")
     .addParagraph(
-      "Made as a part of GRE study, to efficiently remember custom word lists."
+      ""
     ).addHeading("Screenshots:")
     .addImage(image1);
 

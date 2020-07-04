@@ -46,16 +46,16 @@ const AboutMe = () => {
     <div id="aboutme" className="jumbotron jumbotron-fluid m-0">
       <div className="container container-fluid p-5">
         <div className="row">
-            <div className="col-4 d-none d-lg-block align-self-center">
-              <img
-                className="border border-secondary rounded-circle"
-                src={profilePic}
-                alt="profilepicture"
-              />
-            </div>
+          <div className="col-4 d-none d-lg-block align-self-center">
+            <img
+              className="border border-secondary rounded-circle"
+              src={profilePic}
+              alt="profile picture"
+            />
+          </div>
           <div className="col-lg-8">
             <h1 className="display-4 mb-5 text-center">{aboutHeading}</h1>
-            <p className="lead text-center">{aboutDescription}</p>
+            <p className="lead ">{aboutDescription}</p>
             {resumeURL && (
               <p className="lead text-center">
                 <a

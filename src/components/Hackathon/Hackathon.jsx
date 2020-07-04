@@ -32,7 +32,7 @@ const HackathonCard = ({ index, title, image, location,description,language_list
     <div className="m-5">
       <div className="">
         <div className="row">
-          <div className="col-5 col-lg-5">
+          <div className="col-0 col-g-5">
             <img src={image} style={imageStyle} className="card-img" alt="..." />
           </div>
           <div className="col-6 col-lg-6">

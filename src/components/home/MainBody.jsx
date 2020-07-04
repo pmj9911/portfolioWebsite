@@ -39,14 +39,12 @@ const MainBody = () => {
           </h1>
           <Typist className="lead" cursor={{ hideWhenDone: true }}> 
               <span> Back-End Developer |</span>
-                <Typist.Backspace count={21} delay={500} /> 
-                <span>Flutter Developer|</span>
-                <Typist.Backspace count={18} delay ={500} />
-                <span>ML AI Enthusiast |</span>
-                <Typist.Backspace count={18} delay={500} />
-                <span> Love to Read !</span>
-                <Typist.Backspace count={14} delay={500} />
-              <span> Welcome! </span>
+              <Typist.Backspace count={21} delay={500} /> 
+              <span>ML AI Enthusiast |</span>
+              <Typist.Backspace count={18} delay={500} />
+              <span> After all this time?</span>
+              <Typist.Backspace count={0} delay={700} />
+              <span>..... Always!</span>
           </Typist>
           <div className="p-5">
             {icons.map((icon) => (

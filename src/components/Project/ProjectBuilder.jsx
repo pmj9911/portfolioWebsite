@@ -3,10 +3,10 @@ import React, { useState, Fragment } from "react";
 class ProjectBuilder {
   list = [];
 
-  constructor({ name, githubLink, updatedOn, description, Technology }) {
+  constructor({ name, githubLink, projectDuration, description, Technology }) {
     this.name = name;
     this.githubLink = githubLink;
-    this.updatedOn = updatedOn;
+    this.projectDuration = projectDuration;
     this.description = description;
     this.Technology = Technology;
   }
